@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dsprefs.UserActivity">
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nama"/>
+
+    <EditText
+        android:id="@+id/etUmur"
+        android:layout_below="@id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="umur"/>
+
+    <Button
+        android:id="@+id/btnSavePres"
+        android:layout_below="@+id/etUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"/>
+
+
+    <TextView
+        android:id="@+id/resultNama"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnSavePres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/resultUmur"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/resultNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnClearPres"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/resultUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"/>
+
+</RelativeLayout>
